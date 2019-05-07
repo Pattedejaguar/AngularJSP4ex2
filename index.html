@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="carApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div ng-controller="carCtrl">
+   <table rules="all" style="border:solid 1px black">
+     <thead>
+       <th>Marques</th>
+       <th>Couleurs</th>
+     </thead>
+     <tr ng-repeat="x in marques">
+       <td>
+         {{x.marque}}
+       </td>
+       <td>
+         {{x.couleur}}
+       </td>
+     </tr>
+   </table>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>
